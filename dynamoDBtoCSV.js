@@ -147,7 +147,7 @@ var unparseData = function (lastEvaluatedKey) {
 }
 
 var writeData = function (data) {
-  stream.write(data);
+  stream.write(data+'\r\n');
 };
 
 function unMarshalIntoArray(items) {
